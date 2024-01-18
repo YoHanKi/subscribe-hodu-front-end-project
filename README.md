@@ -7,7 +7,7 @@
 > 
 > **카카오맵 API**와 **Picsum 홈페이지 이미지**를 사용하였으며, JS를 이용한 **무한 스크롤 이미지(스로틀링)** 구현을 중점으로 작성하였다. 
 
-<img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/2795bc16-9e8d-4453-8792-6431f680df86" width="300">
+<img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/f437bfcb-e62b-401b-af22-f63a3f38d103" width="300">
 
 ## 2024-01-16
 ### HTML 추가사항
