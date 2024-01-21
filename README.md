@@ -50,6 +50,7 @@ HTML의 Semantic한 태그 사용을 중점으로 먼저 작성하였다. 이 �
 ### javaScript 추가사항
 - 버튼 클릭 시 이미지 출력 추가
 - 스크롤 감지+스로틀링 추가
+<img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/cd61a162-2b9e-43b2-9310-574774a53a17" width="300">
 
 
 *당일 수정 내용*
