@@ -70,6 +70,8 @@ table {
 }
 
 body {
+    max-width: 1920px;
+    width: 1920px;
     font-family:'Pretendard-Regular';
 }
 /*버튼*/
@@ -105,7 +107,7 @@ header {
     display: block;
     width: 130px;
     height: 40px;
-    background: url("hodo_logo.png") no-repeat;
+    background: url("../media/hodo_logo.png") no-repeat;
     background-size: contain;
     text-indent: -9999px;
 }
@@ -185,7 +187,6 @@ header {
 /*이미지 처리 공간 설명*/
 .main_img_box {
     display: flex;
-    align-items: center;
     flex-direction: column;
     padding: 120px 320px 0 320px;
 }
@@ -209,20 +210,16 @@ header {
 /*이미지 처리 공간 설명 끝*/
 
 /*이미지 처리 공간*/
-.main_hodu, .loading_hodu.active {
+.main_hodu {
     display: grid;
 }
-.main_hodu, .loading_hodu {
+.main_hodu {
     margin-top: 72px;
     grid-template-columns: 378px 1fr 1fr;
     grid-template-rows: 378px 1fr;
     gap: 72px 72px;
 }
-/*JS 이미지 처리 공간*/
-.loading_hodu {
-    display: none;
-}
-.main_img ul img {
+.main_img ul img, .loading_hodu img {
     width: 378px;
     height: 378px;
     border-radius: 30px;
@@ -230,6 +227,38 @@ header {
     box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
 }
 .main_img ul img:hover {
+    transform: scale(1.2);
+}
+
+/*JS 이미지 처리 공간*/
+.loading_hodu {
+    display: grid;
+    grid-template-columns: 378px;
+    grid-template-rows: 378px;
+    gap: 72px;
+    padding: 50px 0 50px 0;
+}
+#slide_tab {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 99%;
+    position: fixed;
+    bottom: 0; left: -600px;
+    overflow: auto;
+    z-index: 1;
+    transition: all 0.5s;
+    border-top-right-radius: 30px;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+}
+#slide_tab::-webkit-scrollbar {
+    display: none;
+}
+#slide_tab.active {
+    left: 0;
+}
+#slide_tab ul img:hover {
     transform: scale(1.2);
 }
 .loading_hodu img {
@@ -258,11 +287,8 @@ header {
     border-top: 1px solid rgba(196, 196, 196, 1);
 }
 /*메인 끝*/
+
 /*맵 관련 설명*/
-.total_map_box {
-    display: flex;
-    justify-content: center;
-}
 .total_map {
     padding: 68px 320px 0 320px;
 }
@@ -326,7 +352,7 @@ footer {
     height: 60px;
     border-radius: 60px;
     font-size: 16px;
-    background: url("mail.svg") no-repeat 28px;
+    background: url("../media/mail.svg") no-repeat 28px;
     background-color: #FFFFFF;
     background-size: 24px;
 }
@@ -347,7 +373,7 @@ footer {
 .footer_img {
     width: 1920px;
     height: 340px;
-    background: url("img_5.png") no-repeat center / cover;
+    background: url("../media/img_5.png") no-repeat center / cover;
     color: rgba(242, 233, 216, 0.6);
 }
 
@@ -358,10 +384,10 @@ footer {
     right: 25px;
     bottom: 180px;
     text-indent: -9999px;
-    background: url("scroll-top-btn_hover.png") no-repeat center;
+    background: url("../media/scroll-top-btn_hover.png") no-repeat center;
 }
 .to_top:hover {
-    background: url("scroll-top-btn.png") no-repeat center;
+    background: url("../media/scroll-top-btn.png") no-repeat center;
 }
 /*상단 이동과 이미지 끝*/
 
@@ -392,16 +418,16 @@ footer {
     width: 42px;
     height: 42px;
     text-indent: -9999px;
-    background: url("icon-blog.png") no-repeat;
+    background: url("../media/icon-blog.png") no-repeat;
 }
 .footer_link li +li a {
-    background: url("icon-insta.png") no-repeat;
+    background: url("../media/icon-insta.png") no-repeat;
 }
 .footer_link li +li +li a {
-    background: url("icon-facebook.png") no-repeat;
+    background: url("../media/icon-facebook.png") no-repeat;
 }
 .footer_link li +li +li +li a {
-    background: url("icon-youtube.png") no-repeat;
+    background: url("../media/icon-youtube.png") no-repeat;
 }
 
 /*footer 끝*/
@@ -425,7 +451,7 @@ footer {
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 30px;
-    background: url("modalbg.png") no-repeat center;
+    background: url("../media/modalbg.png") no-repeat center;
     background-size: 600px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 }
@@ -464,3 +490,24 @@ footer {
     left: 50%;
 }
 /*로딩창 끝*/
+
+/*스크롤 다운*/
+.scrollDown img {
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 200px;
+    animation: moveScroll 2s ease-in-out infinite reverse;
+}
+
+@-webkit-keyframes moveScroll {
+    0% {
+        margin-top: 300px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
