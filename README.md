@@ -57,3 +57,29 @@ HTML의 Semantic한 태그 사용을 중점으로 먼저 작성하였다. 이 �
 ```
 메인 이미지 출력에 있어 Show more 버튼 클릭 시 발생하도록 구현하였다. 또한 무한 이미지를 위한 스크롤 감지와 스로틀링으로 민감도를 수정하였다.
 ```
+## Branch
+> 브랜치는 main branch, develop branch, feature branch 총 3개의 브랜치를 사용한다.
+> 
+> (참조 : 백승진님의[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
+
+
+## Commit Convention
+> 커밋 컨벤션은 아래의 내용을 참고하여 작성한다.
+> 
+> (참조 : 백승진님의[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
+
+ |Tag Name|Description|
+|------|---|
+|Feat|새로운 기능 추가|
+|Fix|버그 수정|
+|Design|CSS 등 사용자 UI 디자인 변경|
+|!BREAKING CHANGE|커다란 API 변경의 경우|
+|!HOTFIX|급하게 치명적인 버그를 고쳐야하는 경우|
+|Style|코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우|
+|Refactor|프로덕션 코드 리팩토링|
+|Comment|필요한 주석 추가 및 변경|
+|Docs|문서 수정|
+|Test|테스트 코드, 리펙토링 테스트 코드 추가|
+|Chore|빌드 업무 수정, 패키지 매니저 수정, 패키지 관리자 구성 등 업데이트|
+|Rename|파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우|
+|Remove|파일을 삭제하는 작업만 수행한 경우|
