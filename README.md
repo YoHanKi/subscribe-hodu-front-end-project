@@ -26,9 +26,10 @@
 - 메인 이미지와 설명내용 스타일 추가
 
 
-*당일 수정 내용*
+*🔨당일 수정 내용*
 ```
-HTML의 Semantic한 태그 사용을 중점으로 먼저 작성하였다. 이 후 CSS 작성 중 HTML 태그를 수정하였다.
+HTML의 Semantic한 태그 사용을 중점으로 먼저 작성하였다. 
+이 후 CSS 작성 중 HTML 태그를 수정하였다.
 ```
 
 ## 2024-01-17
@@ -41,32 +42,59 @@ HTML의 Semantic한 태그 사용을 중점으로 먼저 작성하였다. 이 �
 ### JavaScript 추가사항
 - 메인 이미지 출력
 
-*당일 수정 내용*
+*🔨당일 수정 내용*
 ```
-전체적인 CSS 스타일을 추가하였다. KakaoMap API 추가와 JS를 사용(fetch)하여 중앙에 있는 메인 이미지 출력을 구현하였다.
+전체적인 CSS 스타일을 추가하였다. 
+KakaoMap API와 JS를 사용(fetch)하여 중앙에 있는 메인 이미지 출력을 구현하였다.
 ```
 
 ## 2024-01-18
 ### javaScript 추가사항
 - 버튼 클릭 시 이미지 출력 추가
 - 스크롤 감지+스로틀링 추가
+
 <img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/cd61a162-2b9e-43b2-9310-574774a53a17" width="300">
 
 
-*당일 수정 내용*
+*🔨당일 수정 내용*
 ```
-메인 이미지 출력에 있어 Show more 버튼 클릭 시 발생하도록 구현하였다. 또한 무한 이미지를 위한 스크롤 감지와 스로틀링으로 민감도를 수정하였다.
+메인 이미지 출력에 있어 Show more 버튼 클릭 시 발생하도록 구현하였다.
+또한 무한 이미지를 위한 스크롤 감지와 스로틀링으로 민감도를 수정하였다.
 ```
-## Branch
+## 2024-01-22
+
+
+### HTML 추가사항
+- 이미지 로딩 화면을 추가를 위해 로딩 이미지 div 추가
+- 입력창에서 엔터 입력 시 모달창 활성화
+- 사이드바 구현
+
+### CSS 추가사항
+- 이미지 로딩 화면 추가 작성
+- 사이드바 구현
+
+### JavaScript 추가사항
+- 이미지 로딩화면 추가
+- 상단 높이 기준 1000px 아래로 이동해야 top 버튼 활성화 추가
+- 사이드바 구현
+
+
+🔨*당일 수정 내용*
+```
+- 유지보수 편의성을 위해 디렉토리를 전체적으로 변경하였다.
+- 브랜치를 develop과 feature 브랜치를 생성하였다.
+```
+
+## 🌈Branch
 > 브랜치는 main branch, develop branch, feature branch 총 3개의 브랜치를 사용한다.
 > 
-> (참조 : 백승진님의[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
+> (참조 : 백승진님 깃허브[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
 
 
-## Commit Convention
+## 🌞Commit Convention
 > 커밋 컨벤션은 아래의 내용을 참고하여 작성한다.
 > 
-> (참조 : 백승진님의[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
+> (참조 : 백승진님 깃허브[https://github.com/BaxDailyGit/landing-page] 와 박인수멘토님의 교육을 토대로 작성)
 
  |Tag Name|Description|
 |------|---|

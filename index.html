@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>호두와 함께 춤을</title>
     <!--타이틀 아이콘-->
-    <link rel="icon" type="image/x-icon" href="resource/modal.png"/>
-    <link rel="stylesheet" href="resource/common.css"/>
+    <link rel="icon" type="image/x-icon" href="media/modal.png"/>
+    <link rel="stylesheet" href="style/common.css"/>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11a3c93db2ceff409b7ccce65306748b"></script>
 </head>
 <body>
 
@@ -48,7 +49,7 @@
     </p>
     <button class="download" type="button">Download</button>
     </div>
-    <img class="box_cat" src="resource/박스쓴고양이.png" alt="박스쓴고양이">
+    <img class="box_cat" src="media/boxCat.png" alt="박스쓴고양이">
 </section>
 <!--헤더 메인 표지 끝-->
 </header>
@@ -58,7 +59,7 @@
 <main>
 <!--메인 이미지 설명-->
     <article class="main_header">
-        <img class="lying_cat" src="resource/누운고양이.png" alt="누운고양이">
+        <img class="lying_cat" src="media/lyingCat.png" alt="누운고양이">
         <div>
         <h3 class="main_explain_big">Lorem Ipsum is simply<br>
             dummy text of the printing<br>
@@ -78,22 +79,24 @@
         </div>
         <!--이미지 처리 공간 설명-->
 
-<!--이미지 처리 공간-->
+        <!--이미지 처리 공간-->
         <div class="main_img">
         <ul class="main_hodu">
-            <li><img src="resource/hodus%20(1).png" alt="호두1"></li>
-            <li><img src="resource/hodus%20(2).png" alt="호두2"></li>
-            <li><img src="resource/hodus%20(3).png" alt="호두3"></li>
-            <li><img src="resource/hodus%20(4).png" alt="호두4"></li>
-            <li><img src="resource/hodus%20(5).png" alt="호두5"></li>
-            <li><img src="resource/hodus%20(6).png" alt="호두6"></li>
+            <li><img src="media/hodus(1).png" alt="호두1"></li>
+            <li><img src="media/hodus(2).png" alt="호두2"></li>
+            <li><img src="media/hodus(3).png" alt="호두3"></li>
+            <li><img src="media/hodus(4).png" alt="호두4"></li>
+            <li><img src="media/hodus(5).png" alt="호두5"></li>
+            <li><img src="media/hodus(6).png" alt="호두6"></li>
         </ul>
-<!--JS 이미지 처리 공간-->
+        </div>
+        <!--JS 이미지 처리 공간-->
+        <div id="slide_tab">
             <ul class="loading_hodu">
 
             </ul>
         </div>
-<!--JS 이미지 처리 공간 끝 -->
+        <!--JS 이미지 처리 공간 끝 -->
 <!--show more 버튼-->
         <div class="main_img_more">
         <p class="main_img_more_text">Continue exploring HODU</p>
@@ -105,22 +108,22 @@
 </main>
 <!--메인 끝-->
 
-<!--맵 관련 설명-->
-<section class="total_map_box">
-    <div class="total_map">
-        <h3 class="map_explain">Where you'll be</h3>
-        <p class="map_explain_lit">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-            <!-- 카카오 지도 표시할 div-->
-        <div id="map">
 
-        </div>
-    </div>
-</section>
-<!--맵 끝-->
 
 <!--footer-->
 <!--구독 박스-->
 <footer>
+    <!--맵 관련 설명-->
+    <section class="total_map">
+        <h3 class="map_explain">Where you'll be</h3>
+        <p class="map_explain_lit">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        <!-- 카카오 지도 표시할 div-->
+        <div id="map">
+
+        </div>
+    </section>
+    <!--맵 끝-->
+
     <aside class="subscribe">
         <div>
             <h3 class="subscribe_explain">Subscribe to our Blog post</h3>
@@ -128,9 +131,9 @@
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
         <div>
-            <form name="sub" onsubmit="return false;">
-                <label id="subs"></label>
-                <input name="subs" type="email" placeholder="Enter your e-mail address">
+            <form  onsubmit="return false;">
+                <label name="sub"></label>
+                <input name="sub" class="sub_input" type="email" placeholder="Enter your e-mail address">
                 <button class="subscribe_btn" type="submit">Subscribe</button>
             </form>
         </div>
@@ -144,7 +147,7 @@
 
     <article class="footer_line">
     <div class="footer_tab">
-        <img class="hodu_footerlogo" src="resource/hodo_logo.png">
+        <img class="hodu_footerlogo" src="media/hodo_logo.png">
     </div>
     <div class="footer_link">
         <ul class="footer_link_list">
@@ -171,7 +174,7 @@
 <article class="modal_bg">
     <div class="modal_pop">
         <div>
-            <img src="resource/modal.png">
+            <img src="media/modal.png">
             <p class="thanks_text">Thank you!</p>
             <p class="thanks_text_lit">Lorem Ipsum is simply dummy text of the printing industry. </p>
             <button type="button" class="thanks">OK! I Love HODU</button>
@@ -181,10 +184,15 @@
 <!--모달창 끝-->
 <!--로딩창-->
 <div class="loading">
-    <img src="resource/loadingCat.gif" alt="loading">
+    <img src="media/loadingCat.gif" alt="loading">
 </div>
 <!--로딩창 끝-->
-<!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11a3c93db2ceff409b7ccce65306748b"></script>-->
-<script src="resource/common.js"></script>
+<!--스크롤 다운-->
+<div class="scrollDown">
+    <img src="media/scrolldown.png" alt="srolldown">
+</div>
+<!--스크롤 다운 끝-->
+
+<script src="script/common.js"></script>
 </body>
 </html>
