@@ -106,12 +106,14 @@
 <!--메인 끝-->
 
 <!--맵 관련 설명-->
-<section class="total_map">
-<h3 class="map_explain">Where you'll be</h3>
-<p class="map_explain_lit">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-    <!-- 카카오 지도 표시할 div-->
-    <div id="map">
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11a3c93db2ceff409b7ccce65306748b"></script>
+<section class="total_map_box">
+    <div class="total_map">
+        <h3 class="map_explain">Where you'll be</h3>
+        <p class="map_explain_lit">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            <!-- 카카오 지도 표시할 div-->
+        <div id="map">
+
+        </div>
     </div>
 </section>
 <!--맵 끝-->
@@ -126,8 +128,11 @@
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
         <div>
-            <input type="email" placeholder="Enter your e-mail address">
-            <button class="subscribe_btn" type="button">Subscribe</button>
+            <form name="sub" onsubmit="return false;">
+                <label id="subs"></label>
+                <input name="subs" type="email" placeholder="Enter your e-mail address">
+                <button class="subscribe_btn" type="submit">Subscribe</button>
+            </form>
         </div>
     </aside>
 <!--구독 박스 끝-->
@@ -174,6 +179,12 @@
     </div>
 </article>
 <!--모달창 끝-->
-<script src="resource/common.js"/>
+<!--로딩창-->
+<div class="loading">
+    <img src="resource/loadingCat.gif" alt="loading">
+</div>
+<!--로딩창 끝-->
+<!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11a3c93db2ceff409b7ccce65306748b"></script>-->
+<script src="resource/common.js"></script>
 </body>
 </html>
