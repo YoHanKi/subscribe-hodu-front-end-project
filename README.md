@@ -77,12 +77,14 @@ KakaoMap API와 JS를 사용(fetch)하여 중앙에 있는 메인 이미지 출�
 - 이미지 로딩화면 추가
 - 상단 높이 기준 1000px 아래로 이동해야 top 버튼 활성화 추가
 - 사이드바 구현
-
+  
+<img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/90d39c81-7d98-4382-9df7-ace891f61467" width="300">
 
 🔨*당일 수정 내용*
 ```
 - 유지보수 편의성을 위해 디렉토리를 전체적으로 변경하였다.
 - 브랜치를 develop과 feature 브랜치를 생성하였다.
+- body에 생성하는 무한스크롤이 하단 구독박스의 접근성을 해친다고 생각되어 좌측의 따로 구현하였다.
 ```
 
 ## 🌈Branch
