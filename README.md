@@ -77,7 +77,8 @@ KakaoMap API와 JS를 사용(fetch)하여 중앙에 있는 메인 이미지 출�
 - 이미지 로딩화면 추가
 - 상단 높이 기준 1000px 아래로 이동해야 top 버튼 활성화 추가
 - 사이드바 구현
-
+  
+<img src="https://github.com/YoHanKi/subscribe-hodu-front-end-project/assets/139758405/90d39c81-7d98-4382-9df7-ace891f61467" width="300">
 
 🔨*당일 수정 내용*
 ```
