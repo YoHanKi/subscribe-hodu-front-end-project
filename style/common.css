@@ -72,6 +72,7 @@ table {
 body {
     max-width: 1920px;
     width: 1920px;
+    margin : 0 auto;
     font-family:'Pretendard-Regular';
 }
 /*버튼*/
@@ -169,6 +170,7 @@ header {
     box-shadow: 10px 10px 30px 0 #00000040;
 }
 .main_header div {
+    padding-left: 110px;
     float: right;
     flex-direction: column;
 }
