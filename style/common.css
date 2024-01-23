@@ -282,10 +282,27 @@ header {
 }
 /*show more 버튼 끝*/
 
+/*손핥는 고양이*/
+.cat_chu_box {
+    display: flex;
+    flex-direction: row;
+}
+.cat_chu {
+    width: 300px;
+}
+.cat_chu_hand {
+    width: 300px;
+    height: 62px;
+    position: relative;
+    right: 301px;
+    top: 128px;
+}
+.cat_chu_hand:hover {
+    animation: catchu_do 0.8s linear infinite alternate-reverse;
+}
 /*구분선*/
 .line {
     width: 1278px;
-    margin-top: 80px;
     border-top: 1px solid rgba(196, 196, 196, 1);
 }
 /*메인 끝*/
@@ -508,6 +525,15 @@ footer {
 @-webkit-keyframes moveScroll {
     0% {
         margin-top: 300px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@-webkit-keyframes catchu_do {
+    0% {
+        margin-top: -9px;
     }
     100% {
         margin-top: 0px;
